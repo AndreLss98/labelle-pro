@@ -8,13 +8,20 @@ import { AgendaPageRoutingModule } from './agenda-routing.module';
 
 import { AgendaPage } from './agenda.page';
 
+import { ComponentsModule } from 'src/app/components/components.module';
+import { CalendarioComponent } from 'src/app/components/calendario/calendario.component';
+
 @NgModule({
   imports: [
-    CommonModule,
     FormsModule,
     IonicModule,
+    CommonModule,
+    ComponentsModule,
     AgendaPageRoutingModule
   ],
-  declarations: [AgendaPage]
+  declarations: [AgendaPage],
+  entryComponents: [
+    CalendarioComponent
+  ]
 })
 export class AgendaPageModule {}

@@ -10,6 +10,6 @@ export class AgendaPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
 
+  }
 }

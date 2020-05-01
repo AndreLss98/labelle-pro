@@ -13,10 +13,6 @@ const routes: Routes = [
   },
   {
     path: 'agenda',
-    loadChildren: () => import('./agenda/agenda.module').then( m => m.AgendaPageModule)
-  },
-  {
-    path: 'agenda',
     loadChildren: () => import('./pages/agenda/agenda.module').then( m => m.AgendaPageModule)
   },
   {
