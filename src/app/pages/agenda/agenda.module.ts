@@ -10,6 +10,7 @@ import { AgendaPage } from './agenda.page';
 
 import { ComponentsModule } from 'src/app/components/components.module';
 import { CalendarioComponent } from 'src/app/components/calendario/calendario.component';
+import { ItemAgendaComponent } from 'src/app/components/item-agenda/item-agenda.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { CalendarioComponent } from 'src/app/components/calendario/calendario.co
   ],
   declarations: [AgendaPage],
   entryComponents: [
-    CalendarioComponent
+    CalendarioComponent,
+    ItemAgendaComponent
   ]
 })
 export class AgendaPageModule {}
