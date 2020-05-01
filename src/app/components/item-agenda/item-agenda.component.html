@@ -7,17 +7,17 @@
       <ion-grid class="internal-grid">
         <ion-row>
           <ion-col>
-            <p>Maria Judite da Dores</p>
+            <p>{{ reserva.profissional.nome }}</p>
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-col>
-            <small>Rua 12, N° 21 - Marista - Goiânia - GO</small>
+            <small>{{ endereco }}</small>
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-col>
-            <small>Pintura no cabelo e unha. 08:00</small>
+            <small>{{ this.servicos }} {{ reserva.horario }}</small>
           </ion-col>
         </ion-row>
       </ion-grid>

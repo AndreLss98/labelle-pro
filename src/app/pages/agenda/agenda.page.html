@@ -10,5 +10,5 @@
     </ion-row>
   </ion-grid>
   <calendario></calendario>
-  <item-agenda></item-agenda>
+  <item-agenda *ngFor="let reserva of reservaService.reservas" [reserva]="reserva"></item-agenda>
 </ion-content>
