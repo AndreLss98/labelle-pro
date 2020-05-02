@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'ajustes',
     loadChildren: () => import('./pages/ajustes/ajustes.module').then( m => m.AjustesPageModule)
   },
+  {
+    path: 'detalhes-reserva/:id',
+    loadChildren: () => import('./pages/detalhes-reserva/detalhes-reserva.module').then( m => m.DetalhesReservaPageModule)
+  },
 ];
 
 @NgModule({

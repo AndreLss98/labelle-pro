@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit, Input } from '@angular/core';
 
 import { Reserva } from './../../models/reserva.model';
@@ -15,7 +16,8 @@ export class ItemAgendaComponent implements OnInit {
   public servicos: string = '';
 
   constructor(
-    private servicosService: ServicosService
+    private route: Router,
+    private servicosService: ServicosService,
   ) {
 
   }
@@ -24,5 +26,9 @@ export class ItemAgendaComponent implements OnInit {
     this.reserva.servicos.forEach(servico => {
       this.servicos += `${this.servicosService.servicos.find(service => service.id === servico.servico_id).nome} - `;
     })
+  }
+
+  public viewDetails() {
+    this.route.navigateByUrl('detalhes-reserva/1');
   }
 }
