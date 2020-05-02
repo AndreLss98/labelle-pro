@@ -1,0 +1,28 @@
+ion-title {
+  color: var(--ion-color-primary);
+}
+
+ion-card-title{
+  color: #F6AEC2;
+}
+
+ion-input{
+  border-bottom: 1px solid gray;
+  color: gray;
+}
+
+ion-icon {
+  font-size: 2em;
+}
+
+ion-content{
+  --background: url(../../../assets/background.jpg) 0 0/100% 100% no-repeat;
+}
+
+ion-card-title{
+  font-size: 230%;
+}
+
+ion-card-subtitle{
+  font-family: 'Righteous', cursive;
+}
