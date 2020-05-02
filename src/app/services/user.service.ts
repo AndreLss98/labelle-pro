@@ -16,8 +16,15 @@ export class UserService {
       qua: true,
       qui: true,
       sex: true,
-      sab: false
-    }
+      sab: false,
+      horario_inicio: "08:00",
+      horario_fim: "17:00"
+    },
+    servicosDisponiveis: [
+      { servico_id: 1, valor: 50, disponivel: false },
+      { servico_id: 2, valor: 20, disponivel: true },
+      { servico_id: 3, valor: 35, disponivel: false }
+    ]
   }
 
   constructor() {

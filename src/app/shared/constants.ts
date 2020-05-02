@@ -1,13 +1,11 @@
 export const NOME_DIAS_DA_SEMANA = [
-    { idDiaSemana: 1, sigla: "DOM" },
-    { idDiaSemana: 2, sigla: "SEG" },
-    { idDiaSemana: 3, sigla: "TER" },
-    { idDiaSemana: 4, sigla: "QUA" },
-    { idDiaSemana: 5, sigla: "QUI" },
-    { idDiaSemana: 6, sigla: "SEX" },
-    { idDiaSemana: 7, sigla: "SAB" }
+    { idDiaSemana: 0, sigla: "Dom" },
+    { idDiaSemana: 1, sigla: "Seg" },
+    { idDiaSemana: 2, sigla: "Ter" },
+    { idDiaSemana: 3, sigla: "Qua" },
+    { idDiaSemana: 4, sigla: "Qui" },
+    { idDiaSemana: 5, sigla: "Sex" },
+    { idDiaSemana: 6, sigla: "Sab" }
 ];
 
 export const NOME_MESES = ["Janeiro", "Fevereiro", "Março", "Abril",  "Maio","Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
-
-

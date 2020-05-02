@@ -9,8 +9,6 @@ import { AgendaPageRoutingModule } from './agenda-routing.module';
 import { AgendaPage } from './agenda.page';
 
 import { ComponentsModule } from 'src/app/components/components.module';
-import { CalendarioComponent } from 'src/app/components/calendario/calendario.component';
-import { ItemAgendaComponent } from 'src/app/components/item-agenda/item-agenda.component';
 
 @NgModule({
   imports: [
@@ -20,10 +18,6 @@ import { ItemAgendaComponent } from 'src/app/components/item-agenda/item-agenda.
     ComponentsModule,
     AgendaPageRoutingModule
   ],
-  declarations: [AgendaPage],
-  entryComponents: [
-    CalendarioComponent,
-    ItemAgendaComponent
-  ]
+  declarations: [AgendaPage]
 })
 export class AgendaPageModule {}

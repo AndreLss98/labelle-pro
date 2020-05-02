@@ -1,21 +1,30 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-grid>
-      <ion-row>
-        <ion-col size="2" class="ion-align-self-center">
-          <ion-icon src="assets/back.svg"></ion-icon>
-        </ion-col>
-        <ion-col class="ion-text-center">
-          <div class="logo">
-            <img src="assets/logo.svg" alt="logo">
-            <h1>LaBelle</h1>
-          </div>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-toolbar>
-</ion-header>
-
+<header></header>
 <ion-content>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <h6>Dias de Trabalho</h6>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <dias-semana [diasTrabalho]="userService.user.diasTrabalho"></dias-semana>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <h6>Horário Disponível</h6>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-around">
+      <ion-col size="4">
+        <block-info [info]="userService.user.diasTrabalho.horario_inicio" [desc]="'Começo'"></block-info>        
+      </ion-col>
+      <ion-col size="4">
+        <block-info [info]="userService.user.diasTrabalho.horario_fim" [desc]="'Fim'"></block-info>
+      </ion-col>
+    </ion-row>
+    <line-separator [text]="'Serviços'" [textSize]="4" [lineSize]="3"></line-separator>
+    <input-servico *ngFor="let servico of servicosService.servicos" [servico]="servico"></input-servico>
+  </ion-grid>
 </ion-content>

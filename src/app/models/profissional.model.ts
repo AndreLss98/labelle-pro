@@ -6,10 +6,19 @@ export interface DiasTrabalho {
     qui: boolean;
     sex: boolean;
     sab: boolean;
+    horario_inicio: string;
+    horario_fim: string;
+}
+
+export interface ProServico {
+    servico_id: number;
+    valor: number;
+    disponivel: boolean;
 }
 
 export interface Profissional {
     nome: string;
     img_perfil: string;
     diasTrabalho: DiasTrabalho;
+    servicosDisponiveis: ProServico[];
 }

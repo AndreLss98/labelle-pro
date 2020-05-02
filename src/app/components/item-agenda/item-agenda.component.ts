@@ -2,6 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 
 import { Reserva } from './../../models/reserva.model';
 
+import { ServicosService } from 'src/app/services/servicos.service';
+
 @Component({
   selector: 'item-agenda',
   templateUrl: './item-agenda.component.html',
@@ -10,18 +12,17 @@ import { Reserva } from './../../models/reserva.model';
 export class ItemAgendaComponent implements OnInit {
 
   @Input() reserva: Reserva;
-  // public endereco: string = '';
   public servicos: string = '';
 
-  constructor() {
+  constructor(
+    private servicosService: ServicosService
+  ) {
 
   }
 
   ngOnInit() {
-    /* this.endereco = `Rua ${this.reserva.cliente.local.rua}, N° ${this.reserva.cliente.local.numero} - ${this.reserva.cliente.local.setor} - ${this.reserva.cliente.local.cidade} - ${this.reserva.cliente.local.estado}`; */
-
     this.reserva.servicos.forEach(servico => {
-      this.servicos += `${servico.nome} - `;
+      this.servicos += `${this.servicosService.servicos.find(service => service.id === servico.servico_id).nome} - `;
     })
   }
 }

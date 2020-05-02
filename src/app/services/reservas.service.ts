@@ -15,8 +15,8 @@ export class ReservasService {
         img_perfil: "assets/imgs/woman_1.png"
       },
       servicos: [
-        { nome: "Corte", icone_path: "cut_hair.svg", valor: 90},
-        { nome: "Unha", icone_path: "nail.svg", valor: 30},
+        { servico_id: 1, valorPago: 50 },
+        { servico_id: 2, valorPago: 20 },
       ]
     }
   ]

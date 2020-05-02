@@ -8,7 +8,6 @@ import { AjustesPageRoutingModule } from './ajustes-routing.module';
 
 import { AjustesPage } from './ajustes.page';
 import { ComponentsModule } from 'src/app/components/components.module';
-import { CircleImgComponent } from 'src/app/components/circle-img/circle-img.component';
 
 @NgModule({
   imports: [
@@ -18,9 +17,6 @@ import { CircleImgComponent } from 'src/app/components/circle-img/circle-img.com
     ComponentsModule,
     AjustesPageRoutingModule
   ],
-  declarations: [AjustesPage],
-  entryComponents: [
-    CircleImgComponent
-  ]
+  declarations: [AjustesPage]
 })
 export class AjustesPageModule {}

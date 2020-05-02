@@ -29,11 +29,12 @@ export class LoginPage implements OnInit {
   }
 
   onLogin() {
-    if (this.loginForm.get('email').value == 'victor@email.com' && this.loginForm.get('senha').value == '12345') {
+    this.route.navigateByUrl('/agenda');
+/*     if (this.loginForm.get('email').value == 'victor@email.com' && this.loginForm.get('senha').value == '12345') {
       this.route.navigateByUrl('/agenda');
     } else {
       alert('Email ou senha incorreto!')
-    }
+    } */
   }
 
 }

@@ -1,5 +1,10 @@
 export interface Servico {
+    id: number;
     nome: string;
     icone_path: string;
-    valor: number;
+}
+
+export interface ServicoPago {
+    servico_id: number;
+    valorPago: number;
 }

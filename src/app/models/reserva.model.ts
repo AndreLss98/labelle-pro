@@ -1,9 +1,9 @@
 import { Cliente } from './cliente.model';
-import { Servico } from './servico.model';
+import { ServicoPago } from './servico.model';
 
 export interface Reserva {
     dia: number;
     horario: string;
-    servicos: Servico[],
+    servicos: ServicoPago[],
     cliente: Cliente
 }
