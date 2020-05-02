@@ -34,4 +34,10 @@ export class InputServicoComponent implements OnInit {
   public onClickInput() {
     this.disponivel = !this.disponivel;
   }
+
+  public formatValueInput() {
+    this.formatedValue = this.formatedValue.replace(/[a-zA-Z à-úÀ-Ú]/g, '').replace(/^\,./, '0,00')
+    .replace(/([0-9]*\,)./, '$100').replace(/([0-9]*\,)[0-9]{3,}/, '$100');
+    if (this.formatedValue === '') this.formatedValue = '0,00';
+  }
 }
