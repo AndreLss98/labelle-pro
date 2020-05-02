@@ -12,9 +12,11 @@ import { DiasSemanaComponent } from './dias-semana/dias-semana.component';
 import { LineSeparatorComponent } from './line-separator/line-separator.component';
 import { InputServicoComponent } from './input-servico/input-servico.component';
 import { BlockServiceComponent } from './block-service/block-service.component';
+import { TicketComponent } from './ticket/ticket.component';
 
 @NgModule({
   declarations: [
+    TicketComponent,
     CalendarioComponent,
     ItemAgendaComponent,
     CircleImgComponent,
@@ -23,7 +25,7 @@ import { BlockServiceComponent } from './block-service/block-service.component';
     LineSeparatorComponent,
     HeaderComponent,
     InputServicoComponent,
-    BlockServiceComponent
+    BlockServiceComponent,
   ],
   imports: [
     FormsModule,
@@ -31,6 +33,7 @@ import { BlockServiceComponent } from './block-service/block-service.component';
     CommonModule,
   ],
   exports: [
+    TicketComponent,
     CalendarioComponent,
     ItemAgendaComponent,
     CircleImgComponent,

@@ -25,5 +25,13 @@
         <block-service [servico]="servico"></block-service>
       </ion-col>
     </ion-row>
+    <ion-row>
+      <ion-col>
+        <ticket [total]="valorTotal"></ticket>
+      </ion-col>
+    </ion-row>
   </ion-grid>
+  <div class="div-cancel-container">
+    <ion-button color="primary" expand="block" size="large">Cancelar?</ion-button>
+  </div>
 </ion-content>
