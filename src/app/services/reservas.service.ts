@@ -13,7 +13,7 @@ export class ReservasService {
       horario: "08:00",
       cliente: {
         nome: "Maria Judite da Dores",
-        img_perfil: "assets/imgs/woman_1.png"
+        img_perfil: "assets/imgs/woman_1.jpg"
       },
       servicos: [
         { servico_id: 1, valorPago: 50 },

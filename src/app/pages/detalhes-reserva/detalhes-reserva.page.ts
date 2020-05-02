@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Reserva } from 'src/app/models/reserva.model';
 
 @Component({
   selector: 'app-detalhes-reserva',
@@ -8,6 +9,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DetalhesReservaPage implements OnInit {
 
+  public reserva: Reserva;
+
   constructor(
     private routerSnapshot: ActivatedRoute
   ) {
@@ -15,7 +18,8 @@ export class DetalhesReservaPage implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.routerSnapshot.snapshot);
+    this.reserva = this.routerSnapshot.snapshot.data.reserva;
+    console.log(this.reserva)
   }
 
 }

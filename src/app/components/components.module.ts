@@ -11,6 +11,7 @@ import { ItemAgendaComponent } from './item-agenda/item-agenda.component';
 import { DiasSemanaComponent } from './dias-semana/dias-semana.component';
 import { LineSeparatorComponent } from './line-separator/line-separator.component';
 import { InputServicoComponent } from './input-servico/input-servico.component';
+import { BlockServiceComponent } from './block-service/block-service.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { InputServicoComponent } from './input-servico/input-servico.component';
     LineSeparatorComponent,
     HeaderComponent,
     InputServicoComponent,
+    BlockServiceComponent
   ],
   imports: [
     FormsModule,
@@ -37,6 +39,7 @@ import { InputServicoComponent } from './input-servico/input-servico.component';
     LineSeparatorComponent,
     HeaderComponent,
     InputServicoComponent,
+    BlockServiceComponent
   ]
 })
 export class ComponentsModule { }
