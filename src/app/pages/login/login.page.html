@@ -1,80 +1,52 @@
-<form [formGroup]="loginForm" novalidate>
-
-  <ion-content fullscreen>
-    <ion-grid class="ion-text-center">
-      <ion-row>
-        <ion-col size="2">
-        </ion-col>
-        <ion-col size="8">
-          <img src="../../../assets/logo.svg" />
-        </ion-col>
-        <ion-col size="2">
-        </ion-col>
-        <ion-col size="2">
-        </ion-col>
-        <ion-col size="8">
-          <ion-card-title>La Belle</ion-card-title>
-        </ion-col>
-        <ion-col size="2">
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+<ion-content>
+  <div id="bg"></div>
+  <div id="logo-container">
+    <ion-icon src="assets/logo.svg"></ion-icon>
+    <div>
+      <h1>La</h1>
+      <h1>Belle</h1>
+    </div>
+  </div>
+  <div id="input-container">
     <ion-grid>
-      <ion-row style=" font-size: small; ">
-
-        <ion-col size="2">
+      <ion-row>
+        <ion-col>
+          <h4>Login</h4>
         </ion-col>
-        <ion-col size="8">
-          <ion-input placeholder="Informe seu email" type="email" formControlName="email" required></ion-input>
-        </ion-col>
-        <ion-col size="2">
-        </ion-col>
-        <ion-col size="2">
-        </ion-col>
-        <ion-col size="8">
-          <ion-input placeholder="Informe sua senha" type="password" formControlName="senha"></ion-input>
-        </ion-col>
-        <ion-col size="2">
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
         </ion-col>
       </ion-row>
 
-      <ion-row style="padding-top: 5%;">
-        <ion-col size="2">
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Senha</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
         </ion-col>
-        <ion-col size="8">
-          <ion-text style="color:grey; font-size: small;">
-            Esqueceu sua senha?
-          </ion-text>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="ion-align-self-center">
+          <small>Esqueceu sua senha?</small>
         </ion-col>
-        <ion-col size="2">
-        </ion-col>
-        <ion-col size="2">
-        </ion-col>
-        <ion-col size="8">
-          <ion-text style="color:grey; font-size: small;">
-            Não tenho cadastro
-          </ion-text>
-        </ion-col>
-        <ion-col size="2">
-        </ion-col>
-        <ion-col size="2">
-        </ion-col>
-        <ion-col size="2">
-        </ion-col>
-        <ion-col size="1">
-        </ion-col>
-        <ion-col size="1" style="padding-top: 10%;">
-          <ion-fab-button color="light" size="small" (click)="onLogin()">
-            <ion-icon src="assets/arrow-right.svg" size="small"></ion-icon>
+        <ion-col class="ion-align-self-center" style="display: flex; justify-content: flex-end;">
+          <ion-fab-button (click)="login()">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
           </ion-fab-button>
         </ion-col>
-        <ion-col size="1">
-        </ion-col>
-        <ion-col size="2">
-        </ion-col>
-        <ion-col size="2">
+      </ion-row>
+      <ion-row id="cadastro">
+        <ion-col class="ion-text-center">
+          <p>Não tenho cadastro</p>
         </ion-col>
       </ion-row>
     </ion-grid>
-  </ion-content>
-</form>
+  </div>
+</ion-content>

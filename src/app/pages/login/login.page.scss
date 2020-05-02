@@ -1,28 +1,55 @@
-ion-title {
-  color: var(--ion-color-primary);
-}
-
-ion-card-title{
-  color: #F6AEC2;
-}
-
-ion-input{
-  border-bottom: 1px solid gray;
-  color: gray;
-}
-
-ion-icon {
-  font-size: 2em;
-}
-
 ion-content{
-  --background: url(../../../assets/imgs/background.jpg) 0 0/100% 100% no-repeat;
+  position: relative;
 }
 
-ion-card-title{
-  font-size: 230%;
+h1, p {
+  margin: 0;
 }
 
-ion-card-subtitle{
-  font-family: 'Righteous', cursive;
+p {
+  color: white;
+}
+
+#bg {
+  position: absolute;
+  width: 100%;
+  height: 82%;
+  bottom: 0;
+  background-image: url(../../../assets/bg-gradiente.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10vw;
+  margin-top: 2vh;
+  ion-icon {
+    font-size: 25vw;
+  }
+  h1 {
+    font-size: 3em;
+    line-height: .9em;
+  }
+}
+
+ion-item {
+  --padding-end: 0;
+  --padding-start: 0;
+  --color: white;
+  --border-color: white;
+  --background: transparent;
+}
+
+#input-container {
+  h4, small {
+    color: white;
+  }
+  margin-top: 20vh;
+  padding: 10vw;
+}
+
+#cadastro {
+  margin-top: 5vh;
 }
