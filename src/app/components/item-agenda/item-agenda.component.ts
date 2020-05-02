@@ -10,7 +10,7 @@ import { Reserva } from './../../models/reserva.model';
 export class ItemAgendaComponent implements OnInit {
 
   @Input() reserva: Reserva;
-  public endereco: string = '';
+  // public endereco: string = '';
   public servicos: string = '';
 
   constructor() {
@@ -18,7 +18,7 @@ export class ItemAgendaComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.endereco = `Rua ${this.reserva.profissional.local.rua}, N° ${this.reserva.profissional.local.numero} - ${this.reserva.profissional.local.setor} - ${this.reserva.profissional.local.cidade} - ${this.reserva.profissional.local.estado}`;
+    /* this.endereco = `Rua ${this.reserva.cliente.local.rua}, N° ${this.reserva.cliente.local.numero} - ${this.reserva.cliente.local.setor} - ${this.reserva.cliente.local.cidade} - ${this.reserva.cliente.local.estado}`; */
 
     this.reserva.servicos.forEach(servico => {
       this.servicos += `${servico.nome} - `;

@@ -1,4 +1,6 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+
 import { ReservasService } from 'src/app/services/reservas.service';
 
 @Component({
@@ -9,6 +11,7 @@ import { ReservasService } from 'src/app/services/reservas.service';
 export class AgendaPage implements OnInit {
 
   constructor(
+    private router: Router,
     public reservaService: ReservasService
   ) {
 
@@ -16,5 +19,9 @@ export class AgendaPage implements OnInit {
 
   ngOnInit() {
 
+  }
+
+  public goToAjustes() {
+    this.router.navigateByUrl('/ajustes');
   }
 }

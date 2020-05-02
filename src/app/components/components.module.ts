@@ -5,11 +5,13 @@ import { CommonModule } from '@angular/common';
 import { CalendarioComponent } from './calendario/calendario.component';
 import { FormsModule } from '@angular/forms';
 import { ItemAgendaComponent } from './item-agenda/item-agenda.component';
+import { CircleImgComponent } from './circle-img/circle-img.component';
 
 @NgModule({
   declarations: [
     CalendarioComponent,
-    ItemAgendaComponent
+    ItemAgendaComponent,
+    CircleImgComponent,
   ],
   imports: [
     FormsModule,
@@ -18,7 +20,8 @@ import { ItemAgendaComponent } from './item-agenda/item-agenda.component';
   ],
   exports: [
     CalendarioComponent,
-    ItemAgendaComponent
+    ItemAgendaComponent,
+    CircleImgComponent,
   ]
 })
 export class ComponentsModule { }

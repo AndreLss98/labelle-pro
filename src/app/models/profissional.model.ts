@@ -1,15 +1,15 @@
-export interface Endereco {
-    rua: number;
-    setor: string;
-    numero: number;
-    quadra: number;
-    estado: string;
-    cidade: string;
-    latitude: number;
-    longitude: number;
+export interface DiasTrabalho {
+    dom: boolean;
+    seg: boolean;
+    ter: boolean;
+    qua: boolean;
+    qui: boolean;
+    sex: boolean;
+    sab: boolean;
 }
 
 export interface Profissional {
     nome: string;
-    local: Endereco;
+    img_perfil: string;
+    diasTrabalho: DiasTrabalho;
 }
