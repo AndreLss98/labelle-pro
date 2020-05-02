@@ -1,0 +1,38 @@
+div.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 3vw;
+}
+
+ion-grid {
+    background-color: white;
+    padding: 0;
+    border-radius: 4px;
+}
+
+p, h6 {
+    margin: 0;
+    color: #B4B4B4;
+}
+
+h6.price {
+    color: #BF4365;
+}
+
+ion-row.buttons {
+    ion-col {
+        padding: 10px 0;
+        h6 {
+            color: white;
+        }
+    }
+    ion-col.cancel {
+        background-color: var(--ion-color-primary);
+        border-bottom-left-radius: 4px;
+    }
+    ion-col.accept {
+        background-color: #BF4365;
+        border-bottom-right-radius: 4px;
+    }
+}
