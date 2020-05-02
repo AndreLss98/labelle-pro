@@ -8,6 +8,7 @@ export class ReservasService {
 
   public reservas: Reserva[] = [
     {
+      id: 1,
       dia: 25,
       horario: "08:00",
       cliente: {
@@ -28,5 +29,9 @@ export class ReservasService {
 
   public getAll() {
     return this.reservas;
+  }
+
+  public getById(id: number) {
+    return this.reservas.find(reserva => reserva.id === id);
   }
 }
