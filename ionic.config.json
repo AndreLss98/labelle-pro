@@ -1,5 +1,7 @@
 {
   "name": "labelle-pro-app",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
